@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="description" content="Price Checker software for Toko Sumatra" />
+    <meta name="keywords" content="price checker, price, checker, software" />
+    <meta name="author" content="Frans Huang" />
+
+    <title>Toko Sumatra | Cek Harga</title>
+
+    <!--  favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <!-- bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+	 <!-- reset css -->
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- font css -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+
+    <!-- material css -->
+    <link href="css/material-design-iconic-font.min.css" rel="stylesheet" />
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- innerpages css -->
+    <link href="css/innerpages/innerpages.css" rel="stylesheet" />
+    
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="header_area" style="padding: 20px 0px 0px ; background: #f8f8f8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h1 class="header">CEK HARGA</h1>
+                    <form id="frmSearch" role="search" class="search-form">
+                        <input autocomplete="off" id="txtBarcode" class="searchBox" type="text" class="form-control" placeholder="Type your keywords" />
+                        <button type="button"><i class="zmdi zmdi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sectionIncorrectBarcode">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+                    <h2 class="text-danger">Barcode Tidak Terdaftar!!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionDetailProduct" class="detail_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h2 class="namaBarang"><u id="txtProductName"></u></h2>
+                </div>
+            </div>
+            <div id="containerPrices" class="row"></div>
+        </div>
+    </section>
+
+    <!-- jquery latest version -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Material js -->
+    <script src="js/mdb.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
