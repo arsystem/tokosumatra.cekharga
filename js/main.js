@@ -26,7 +26,7 @@ $(document).ready(()=>{
         $("#txtBarcode").val("")
 
         $.ajax({
-            url: "http://192.168.1.88:55671/products/" + barcode,
+            url: "http://api.tokosumatra.com/products/" + barcode,
             method: "get",
             success: function(res){
                 $("#sectionDetailProduct").show()
